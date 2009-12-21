@@ -2,7 +2,26 @@ class WineController {
 
     def index = { redirect(action: list, params: params) }
 
-    // the delete, save and update actions only accept POST requests
+    def wineSearch = {}
+
+    def search = {
+        def lat = params.lat
+        def lon = params.lon
+
+        if (lat && lon) {
+            def result = DistanceCalculator.sortedWines(lat as BigDecimal, lon as BigDecimal,
+                    Wine.findAll().collect {new WineCandidate(it.name, it.lat as BigDecimal, it.lon as BigDecimal)} as ArrayList)
+
+            def closeWines = [[latitude: lat, longitude: lon, description: "Your Position"]]
+            [result.apply(0), result.apply(1), result.apply(2)].each {
+                closeWines << [latitude: it.lat, longitude: it.lon, description: it.name]
+            }
+
+            return [markers: closeWines]
+        }
+    }
+
+// the delete, save and update actions only accept POST requests
     static allowedMethods = [delete: 'POST', save: 'POST', update: 'POST']
 
     def list = {
@@ -18,6 +37,16 @@ class WineController {
             redirect(action: list)
         }
         else { return [wineInstance: wineInstance] }
+    }
+
+    def showMap = {
+        def wineInstance = Wine.get(params.id)
+
+        if (!wineInstance) {
+            flash.message = "Wine not found with id ${params.id}"
+            redirect(action: list)
+        }
+        else { return [name: wineInstance.name, lat: wineInstance.lat, lon: wineInstance.lon] }
     }
 
     def delete = {

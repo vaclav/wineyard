@@ -1,11 +1,16 @@
 class BootStrap {
 
     def init = {servletContext ->
-        new Wine(name: 'Barolo', lat: ' 44°36\'37.54"', lon: '  7°56\'33.28"E').save()
-        new Wine(name: 'Boca', lat: ' 45°40\'46.66"N', lon: '  8°24\'33.50"E').save()
-        new Wine(name: 'Albugnano', lat: ' 45° 4\'40.73"N', lon: '  7°58\'16.50"E').save()
-        new Wine(name: 'Alto Adige - Pinot Nero', lat: ' 46°29\'42.59"N', lon: ' 11°21\'14.77"E').save()
-        new Wine(name: 'Barbaresco', lat: ' 44°43\'30.16"N', lon: '  8° 4\'51.13"E').save()
+        new Wine(name: 'Barolo', lat: '44.610428', lon: '7.942577').save()
+        new Wine(name: 'Boca', lat: '45.679628', lon: '8.409306').save()
+        new Wine(name: 'Albugnano', lat: '45.077979', lon: '7.971250').save()
+        new Wine(name: 'Alto Adige - Pinot Nero', lat: '46.495165', lon: '11.354103').save()
+        new Wine(name: 'Barbaresco', lat: '44.72504', lon: '8.08086').save()
+        new Wine(name: 'Brachetto dAcqui', lat: '44.675528', lon: '8.47066').save()
+        new Wine(name: 'Chianti', lat: '43.585099', lon: '11.315357').save()
+        new Wine(name: 'Dolcetto dAcqui', lat: '44.675528', lon: '8.470669').save()
+        new Wine(name: 'Gavi (Cortese di Gavi)', lat: '44.688661', lon: '8.802880').save()
+        //44.404651 8.918862
     }
     def destroy = {
     }

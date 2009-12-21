@@ -7,6 +7,20 @@
     <scope name="Domain" pattern="file:grails-app/domain//*" />
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
+  <component name="FacetAutodetectingManager">
+    <autodetection-disabled>
+      <facet-type id="Clojure">
+        <modules>
+          <module name="wineyard">
+            <files>
+              <file url="file://$PROJECT_DIR$/src/clj/WineFinder.clj" />
+              <file url="file://$PROJECT_DIR$/src/clj/wine/WineFinder.clj" />
+            </files>
+          </module>
+        </modules>
+      </facet-type>
+    </autodetection-disabled>
+  </component>
   <component name="IdProvider" IDEtalkID="BFCBDA2A25EE47B6B119ADD4A354B3C4" />
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" />

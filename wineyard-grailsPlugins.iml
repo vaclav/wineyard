@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="GrailsWeb">
+      <configuration>
+        <webroots>
+          <root url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/richui-0.6/web-app" relative="/" />
+          <root url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/richui-0.6/web-app" relative="/" />
+          <root url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/richui-0.6/web-app" relative="/" />
+          <root url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/scala-0.5/web-app" relative="/" />
+        </webroots>
+        <sourceRoots />
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
+    <content url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/richui-0.6">
+      <sourceFolder url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/richui-0.6/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/richui-0.6/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/richui-0.6/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/richui-0.6/grails-app/taglib" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="grails-1.1.1" level="application" />
@@ -9,10 +28,14 @@
       <library name="Grails User Library">
         <CLASSES>
           <root url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/hibernate-1.1.1/lib" />
+          <root url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/richui-0.6/lib" />
+          <root url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/scala-0.5/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
         <jarDirectory url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/hibernate-1.1.1/lib" recursive="false" />
+        <jarDirectory url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/richui-0.6/lib" recursive="false" />
+        <jarDirectory url="file://C:/Documents and Settings/vaclav/.grails/1.1.1/projects/wineyard/plugins/scala-0.5/lib" recursive="false" />
       </library>
     </orderEntry>
   </component>
